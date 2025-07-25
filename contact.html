@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+<!-- Contact Modal  -->
+<div class="modal-wrap display-none">
+    <div class="modal">
+        <img src="images/1024px-Symbol_OK.png">
+        <p>Tu mensaje ha sido enviado!</p>
+        <button class="btn modal-close">Ok  !</button>
+    </div>
+</div>
+
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="home.html"> <i class="fas fa-home"></i> <span>Inicio</span> </a>
+    <a href="about.html"> <i class="fas fa-user"></i> <span>Sobre mi</span> </a>
+    <a href="exp.html"> <i class="fas fa-user"></i> <span>Experiencia</span> </a>
+    <a href="portfolio.html"> <i class="fas fa-briefcase"></i> <span>Portfolio</span> </a>
+    <a href="contact.html"> <i class="fas fa-address-book"></i> <span>Contacto</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact">
+
+<h1 class="heading"> contacta<span>me</span> </h1>
+
+<div class="row">
+
+    <div class="info-container">
+
+        <h1>Estemos en contacto!</h1>
+
+        <p>Ante cualquier pregunta o consulta no dudes en contactarme. Te responderé a la brevedad! También puedes mandarme un email o un mensaje, mis datos de contacto están a continuación:</p>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-map"></i>
+                <div class="info">
+                    <h3>Email :</h3>
+                    <p>gabrielmartincornejo@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                    <h3>Teléfono :</h3>
+                    <p>5491155695719</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <div class="info">
+                    <h3>Discord :</h3>
+                    <p>angelxg7</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="https://www.facebook.com/gabriel.cornejo1/" class="fab fa-facebook-f" target="_blank"></a>
+            <a href="https://www.instagram.com/gabrielridergmx/" class="fab fa-instagram" target="_blank"></a>
+            <a href="https://www.behance.net/gabrielmartincornejo" class="fab fa-behance" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/gabriel-cornejo-791a972b5/" class="fab fa-linkedin" target="_blank"></a>
+        </div>
+
+    </div>
+
+    <form  class="contact-form">
+
+        <div class="inputBox">
+            <input type="text" placeholder="Tu nombre" class="nombre" id="nombre">
+            <input type="number" placeholder="Tu teléfono" class="tel" id="tel">
+        </div>
+
+        <div class="inputBox">
+            <input type="email" placeholder="Tu email" class="email" id="email">
+            <input type="text" placeholder="Tu asunto" class="asunto" id="asunto">
+        </div>
+
+        <textarea name="" placeholder="Tu mensaje" class="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="enviar mensaje" class="btn submit-form" id="btnEnviar">
+    </form>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+</body>
+
+<script src="contact.js" ></script>
+
+</html>
